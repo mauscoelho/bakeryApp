@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "storybook": "storybook start -p 7007"
   },
   "dependencies": {
     "react": "16.0.0",
@@ -14,6 +15,9 @@
     "preset": "react-native"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^3.2.18",
+    "@storybook/addon-links": "^3.2.18",
+    "@storybook/react-native": "^3.2.18",
     "babel-eslint": "^8.0.3",
     "babel-jest": "^22.0.1",
     "babel-preset-react-native": "^4.0.0",
@@ -21,6 +25,8 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-react": "^7.5.1",
-    "eslint-plugin-react-native": "^3.2.0"
+    "eslint-plugin-react-native": "^3.2.0",
+    "prop-types": "^15.6.0",
+    "react-dom": "16.0.0"
   }
 }
