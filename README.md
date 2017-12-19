@@ -16,3 +16,11 @@ For more information see the [link](https://facebook.github.io/react-native/docs
 * `yarn` - install dependencies
 * `react-native run-ios` - run on iOS
 * `react-native run-android` - run on Android
+
+## Storybook and storyshots for BDD tests
+
+Use storybook to see all of components and states
+
+- `yarn test` - run storyshots
+- `yarn storybook` - run storybook server
+- Run `react-native run-ios` or `react-native run-android`
