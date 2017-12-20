@@ -1,17 +1,6 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import CustomerList from './containers/CustomerList/index';
+import Routes from './Routes';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
-
-const App = () => (
-  <View style={styles.container}>
-    <CustomerList />
-  </View>
-);
+const App = () => <Routes />;
 
 export default App;
