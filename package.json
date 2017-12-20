@@ -8,6 +8,7 @@
     "storybook": "storybook start -p 7007"
   },
   "dependencies": {
+    "prop-types": "^15.6.0",
     "react": "16.0.0",
     "react-native": "0.51.0"
   },
@@ -31,7 +32,6 @@
     "eslint-plugin-react": "^7.5.1",
     "eslint-plugin-react-native": "^3.2.0",
     "identity-obj-proxy": "^3.0.0",
-    "prop-types": "^15.6.0",
     "react-dom": "16.0.0",
     "react-test-renderer": "16.0.0-alpha.12"
   }
