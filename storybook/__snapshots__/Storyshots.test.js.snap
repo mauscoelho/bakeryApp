@@ -4,7 +4,8 @@ exports[`Storyshots CustomerCard with long text 1`] = `
 <View
   style={
     Object {
-      "flex": 1,
+      "paddingBottom": 4,
+      "paddingTop": 4,
     }
   }
 >
@@ -121,7 +122,8 @@ exports[`Storyshots CustomerCard with short text 1`] = `
 <View
   style={
     Object {
-      "flex": 1,
+      "paddingBottom": 4,
+      "paddingTop": 4,
     }
   }
 >
