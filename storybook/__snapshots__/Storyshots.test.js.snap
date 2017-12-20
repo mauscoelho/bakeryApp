@@ -26,19 +26,24 @@ exports[`Storyshots CustomerCard with long text 1`] = `
     >
       <Text
         accessible={true}
-        allowFontScaling={true}
+        allowFontScaling={false}
         ellipsizeMode="tail"
         style={
-          Object {
-            "color": "#000",
-            "fontFamily": "System",
-            "fontSize": 16,
-          }
+          Array [
+            Object {
+              "color": undefined,
+              "fontSize": 27,
+            },
+            undefined,
+            Object {
+              "fontFamily": "Material Design Icons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+          ]
         }
-        uppercase={false}
-        virtual={undefined}
       >
-        img
+        
       </Text>
     </View>
     <View
@@ -138,19 +143,24 @@ exports[`Storyshots CustomerCard with short text 1`] = `
     >
       <Text
         accessible={true}
-        allowFontScaling={true}
+        allowFontScaling={false}
         ellipsizeMode="tail"
         style={
-          Object {
-            "color": "#000",
-            "fontFamily": "System",
-            "fontSize": 16,
-          }
+          Array [
+            Object {
+              "color": undefined,
+              "fontSize": 27,
+            },
+            undefined,
+            Object {
+              "fontFamily": "Material Design Icons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+          ]
         }
-        uppercase={false}
-        virtual={undefined}
       >
-        img
+        
       </Text>
     </View>
     <View
