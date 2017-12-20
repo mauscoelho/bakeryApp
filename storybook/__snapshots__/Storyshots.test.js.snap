@@ -1,64 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots CustomerCard default 1`] = `
+exports[`Storyshots CustomerCard with long text 1`] = `
 <View
   style={
-    Array [
-      Object {
-        "backgroundColor": "#fff",
-        "borderBottomWidth": 0.5,
-        "borderColor": "#ccc",
-        "borderLeftWidth": 0.5,
-        "borderRadius": 2,
-        "borderRightWidth": 0.5,
-        "borderTopWidth": 0.5,
-        "elevation": 3,
-        "flex": 1,
-        "flexWrap": "nowrap",
-        "marginBottom": 5,
-        "marginLeft": 2,
-        "marginRight": 2,
-        "marginTop": 5,
-        "shadowColor": "#000",
-        "shadowOffset": Object {
-          "height": 2,
-          "width": 0,
-        },
-        "shadowOpacity": 0.1,
-        "shadowRadius": 1.5,
-      },
-      Object {
-        "flex": 0,
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
-  virtual={undefined}
 >
   <View
     style={
       Object {
-        "alignItems": "center",
-        "backgroundColor": "#fff",
-        "borderRadius": 2,
         "flexDirection": "row",
-        "paddingBottom": 10,
-        "paddingLeft": 15,
-        "paddingRight": 15,
-        "paddingTop": 10,
       }
     }
-    virtual={undefined}
   >
     <View
       style={
         Object {
-          "alignItems": "center",
-          "alignSelf": "center",
-          "flex": 1,
-          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingLeft": 10,
+          "paddingRight": 10,
         }
       }
-      virtual={undefined}
     >
       <Text
         accessible={true}
@@ -66,11 +30,9 @@ exports[`Storyshots CustomerCard default 1`] = `
         ellipsizeMode="tail"
         style={
           Object {
-            "alignSelf": "center",
             "color": "#000",
             "fontFamily": "System",
             "fontSize": 16,
-            "marginLeft": 10,
           }
         }
         uppercase={false}
@@ -78,63 +40,13 @@ exports[`Storyshots CustomerCard default 1`] = `
       >
         img
       </Text>
-      <View
-        style={
-          Object {
-            "alignItems": null,
-            "alignSelf": "center",
-            "flex": 1,
-            "marginLeft": 10,
-          }
-        }
-        virtual={undefined}
-      >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "#000",
-              "fontFamily": "System",
-              "fontSize": 16,
-            }
-          }
-          uppercase={false}
-          virtual={undefined}
-        >
-          Mauricio Coelho
-        </Text>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          note={true}
-          style={
-            Object {
-              "color": "#808080",
-              "fontFamily": "System",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "marginRight": 20,
-            }
-          }
-          uppercase={false}
-          virtual={undefined}
-        >
-          Lombaardenstraat
-        </Text>
-      </View>
     </View>
     <View
       style={
         Object {
-          "alignItems": "flex-end",
-          "alignSelf": "center",
-          "flex": 0.8,
+          "flex": 1,
         }
       }
-      virtual={undefined}
     >
       <Text
         accessible={true}
@@ -142,10 +54,164 @@ exports[`Storyshots CustomerCard default 1`] = `
         ellipsizeMode="tail"
         style={
           Object {
-            "alignSelf": null,
             "color": "#000",
             "fontFamily": "System",
-            "fontSize": 15,
+            "fontSize": 16,
+          }
+        }
+        uppercase={false}
+        virtual={undefined}
+      >
+        Mauricio Coelho
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        note={true}
+        style={
+          Object {
+            "color": "#a7a7a7",
+            "fontFamily": "System",
+            "fontSize": 14,
+          }
+        }
+        uppercase={false}
+        virtual={undefined}
+      >
+        7889 West Tunnel Apt. 676 South Sherman, AK 16549
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "justifyContent": "center",
+          "paddingLeft": 10,
+          "paddingRight": 10,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#000",
+            "fontFamily": "System",
+            "fontSize": 16,
+          }
+        }
+        uppercase={false}
+        virtual={undefined}
+      >
+        1h
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots CustomerCard with short text 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "justifyContent": "center",
+          "paddingLeft": 10,
+          "paddingRight": 10,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#000",
+            "fontFamily": "System",
+            "fontSize": 16,
+          }
+        }
+        uppercase={false}
+        virtual={undefined}
+      >
+        img
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#000",
+            "fontFamily": "System",
+            "fontSize": 16,
+          }
+        }
+        uppercase={false}
+        virtual={undefined}
+      >
+        Mauricio Coelho
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        note={true}
+        style={
+          Object {
+            "color": "#a7a7a7",
+            "fontFamily": "System",
+            "fontSize": 14,
+          }
+        }
+        uppercase={false}
+        virtual={undefined}
+      >
+        Lombaardenstraat
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "justifyContent": "center",
+          "paddingLeft": 10,
+          "paddingRight": 10,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#000",
+            "fontFamily": "System",
+            "fontSize": 16,
           }
         }
         uppercase={false}

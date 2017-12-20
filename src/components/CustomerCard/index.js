@@ -1,31 +1,42 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { PropTypes } from 'prop-types';
-import { Card, CardItem, Left, Body, Text, Right } from 'native-base';
+import { Text } from 'native-base';
 
 const styles = StyleSheet.create({
   card: {
-    flex: 0,
+    flex: 1,
+  },
+  container: {
+    flexDirection: 'row',
+  },
+  center: {
+    justifyContent: 'center',
+    paddingLeft: 10,
+    paddingRight: 10,
+  },
+  body: {
+    flex: 1,
   },
 });
 
 const CustomerCard = ({
   name, lastName, address, latestVisit,
 }) => (
-  <Card style={styles.card}>
-    <CardItem>
-      <Left>
+  <View style={styles.card}>
+    <View style={styles.container}>
+      <View style={styles.center}>
         <Text>{'img'}</Text>
-        <Body>
-          <Text>{`${name} ${lastName}`}</Text>
-          <Text note>{address}</Text>
-        </Body>
-      </Left>
-      <Right>
+      </View>
+      <View style={styles.body}>
+        <Text>{`${name} ${lastName}`}</Text>
+        <Text note>{address}</Text>
+      </View>
+      <View style={styles.center}>
         <Text>{latestVisit}</Text>
-      </Right>
-    </CardItem>
-  </Card>
+      </View>
+    </View>
+  </View>
 );
 
 CustomerCard.propTypes = {
