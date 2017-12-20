@@ -7,7 +7,21 @@ exports[`Storyshots CustomerCard default 1`] = `
     allowFontScaling={true}
     ellipsizeMode="tail"
   >
-    CustomerCard
+    Mauricio Coelho
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    Lombaardenstraat
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    1h
   </Text>
 </View>
 `;

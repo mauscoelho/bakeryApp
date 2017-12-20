@@ -3,4 +3,11 @@ import React from 'react';
 import { storiesOf } from '@storybook/react-native';
 import CustomerCard from './index';
 
-storiesOf('CustomerCard', module).add('default', () => <CustomerCard />);
+storiesOf('CustomerCard', module).add('default', () => (
+  <CustomerCard
+    name={'Mauricio'}
+    lastName={'Coelho'}
+    address={'Lombaardenstraat'}
+    latestVisit={'1h'}
+  />
+));
