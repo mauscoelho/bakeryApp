@@ -371,7 +371,7 @@ anymatch@^1.3.0:
     micromatch "^2.1.5"
     normalize-path "^2.0.0"
 
-apollo-cache-inmemory@^1.1.4:
+apollo-cache-inmemory@^1.1.2:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/apollo-cache-inmemory/-/apollo-cache-inmemory-1.1.4.tgz#63485b18f56f9ceb912df235b42959e890c89747"
   dependencies:
@@ -385,7 +385,7 @@ apollo-cache@^1.0.2:
   dependencies:
     apollo-utilities "^1.0.3"
 
-apollo-client@^2.0.4:
+apollo-client@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/apollo-client/-/apollo-client-2.1.0.tgz#1d3716cb5d4ad70c3a4147da629fdfcb53925e7b"
   dependencies:
@@ -399,7 +399,7 @@ apollo-client@^2.0.4:
   optionalDependencies:
     "@types/async" "2.0.45"
 
-apollo-link-context@^1.0.3:
+apollo-link-context@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/apollo-link-context/-/apollo-link-context-1.0.3.tgz#9b823e26780a39655a35347f0b0e88b83acdeabe"
   dependencies:
@@ -411,19 +411,19 @@ apollo-link-dedup@^1.0.0:
   dependencies:
     apollo-link "^1.0.7"
 
-apollo-link-error@^1.0.3:
+apollo-link-error@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/apollo-link-error/-/apollo-link-error-1.0.3.tgz#2c679d2e6a2df09a9ae3f70d23c64af922a801a2"
   dependencies:
     apollo-link "^1.0.6"
 
-apollo-link-http@^1.3.2:
+apollo-link-http@^1.3.0:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/apollo-link-http/-/apollo-link-http-1.3.2.tgz#63537ee5ecf9c004efb0317f1222b7dbc6f21559"
   dependencies:
     apollo-link "^1.0.7"
 
-apollo-link@^1.0.0, apollo-link@^1.0.6, apollo-link@^1.0.7:
+apollo-link@^1.0.0, apollo-link@^1.0.5, apollo-link@^1.0.6, apollo-link@^1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/apollo-link/-/apollo-link-1.0.7.tgz#42cd38a7378332fc3e41a214ff6a6e5e703a556f"
   dependencies:
@@ -3459,13 +3459,13 @@ graphql-anywhere@^4.0.1:
   dependencies:
     apollo-utilities "^1.0.3"
 
-graphql-tag@^2.6.1:
+graphql-tag@^2.5.0:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.6.1.tgz#4788d509f6e29607d947fc47a40c4e18f736d34a"
 
-graphql@^0.12.3:
-  version "0.12.3"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-0.12.3.tgz#11668458bbe28261c0dcb6e265f515ba79f6ce07"
+graphql@^0.11.7:
+  version "0.11.7"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-0.11.7.tgz#e5abaa9cb7b7cccb84e9f0836bf4370d268750c6"
   dependencies:
     iterall "1.1.3"
 
@@ -5617,7 +5617,7 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-apollo@^2.0.4:
+react-apollo@^2.0.1:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/react-apollo/-/react-apollo-2.0.4.tgz#01dd32a8e388672f5d7385b21cdd0b94009ee9ee"
   dependencies:

@@ -12,9 +12,6 @@ const isLoading = branch(
 const enhance = compose(
   graphql(ALL_CUSTOMERS_QUERY, {
     name: 'allCustomersQuery',
-    options: {
-      fetchPolicy: 'cache-and-network',
-    },
   }),
   isLoading,
 );

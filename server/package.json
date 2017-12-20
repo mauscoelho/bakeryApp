@@ -1,5 +1,5 @@
 {
-  "name": "bakeryAppGraphcool",
+  "name": "server",
   "version": "1.0.0",
-  "description": "Bakery Graphcool Service"
+  "description": "My Graphcool Service"
 }
