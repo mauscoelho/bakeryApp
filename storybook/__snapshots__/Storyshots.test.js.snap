@@ -186,7 +186,7 @@ exports[`Storyshots CustomerCard with short text 1`] = `
         uppercase={false}
         virtual={undefined}
       >
-        Mauricio Coelho
+        João João
       </Text>
       <Text
         accessible={true}
@@ -203,7 +203,7 @@ exports[`Storyshots CustomerCard with short text 1`] = `
         uppercase={false}
         virtual={undefined}
       >
-        Lombaardenstraat
+        South Sherman
       </Text>
     </View>
     <View
@@ -229,7 +229,7 @@ exports[`Storyshots CustomerCard with short text 1`] = `
         uppercase={false}
         virtual={undefined}
       >
-        1h
+        2h
       </Text>
     </View>
   </View>

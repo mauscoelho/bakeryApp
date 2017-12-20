@@ -23,7 +23,9 @@ const styles = StyleSheet.create({
 });
 
 const CustomerCard = ({
-  name, lastName, address, latestVisit,
+  customer: {
+    name, lastName, address, latestVisit,
+  },
 }) => (
   <View style={styles.card}>
     <View style={styles.container}>
@@ -42,10 +44,12 @@ const CustomerCard = ({
 );
 
 CustomerCard.propTypes = {
-  name: PropTypes.string.isRequired,
-  lastName: PropTypes.string.isRequired,
-  address: PropTypes.string.isRequired,
-  latestVisit: PropTypes.string.isRequired,
+  customer: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    lastName: PropTypes.string.isRequired,
+    address: PropTypes.string.isRequired,
+    latestVisit: PropTypes.string.isRequired,
+  }),
 };
 
 export default CustomerCard;
