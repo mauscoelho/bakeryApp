@@ -5,7 +5,7 @@ import CustomerCard from '../CustomerCard/index';
 
 const CustomerList = ({ allCustomersQuery }) => (
     <FlatList
-      keyExtractor={item => item.name}
+      keyExtractor={item => item.id}
       data={allCustomersQuery.allCustomers}
       renderItem={({ item }) => <CustomerCard customer={item} />}
     />
