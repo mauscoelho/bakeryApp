@@ -1,6 +1,6 @@
 import React from 'react';
-import Routes from './Routes';
+import Apollo from './Apollo';
 
-const App = () => <Routes />;
+const App = () => <Apollo />;
 
 export default App;
