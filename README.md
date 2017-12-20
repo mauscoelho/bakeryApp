@@ -2,6 +2,8 @@
 
 A quickly and beautiful bakery CRM app
 
+See the development progress in this [board](https://trello.com/b/OZDxkW6C/bakeryapp)
+
 ## Dependencies
 
 * `node` - brew install node
