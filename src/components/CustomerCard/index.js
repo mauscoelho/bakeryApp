@@ -6,7 +6,8 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const styles = StyleSheet.create({
   card: {
-    flex: 1,
+    paddingTop: 4,
+    paddingBottom: 4,
   },
   container: {
     flexDirection: 'row',
