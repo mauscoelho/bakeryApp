@@ -1,21 +1,22 @@
-import { compose, defaultProps } from 'recompose';
+import { graphql } from 'react-apollo';
+import { compose, branch, renderComponent } from 'recompose';
+import { ActivityIndicator } from 'react-native';
+import { ALL_CUSTOMERS_QUERY } from '../../data/query';
 import CustomerList from '../../components/CustomerList';
 
-const customers = [
-  {
-    name: 'Mauricio',
-    lastName: 'Coelho',
-    address: '7889 West Tunnel Apt. 676 South Sherman, AK 16549',
-    latestVisit: '1h',
-  },
-  {
-    name: 'João',
-    lastName: 'Silva',
-    address: 'South Sherman',
-    latestVisit: '2h',
-  },
-];
+const isLoading = branch(
+  ({ allCustomersQuery }) => allCustomersQuery.loading,
+  renderComponent(ActivityIndicator),
+);
 
-const enhance = compose(defaultProps({ customers }));
+const enhance = compose(
+  graphql(ALL_CUSTOMERS_QUERY, {
+    name: 'allCustomersQuery',
+    options: {
+      fetchPolicy: 'cache-and-network',
+    },
+  }),
+  isLoading,
+);
 
 export default enhance(CustomerList);
