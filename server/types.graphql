@@ -1,0 +1,15 @@
+type User @model {
+  id: ID! @isUnique
+  name: String!
+  createdAt: DateTime!
+  customers: [Customer!]! @relation(name: "UserCustomers")
+}
+
+type Customer @model {
+  id: ID! @isUnique
+  name: String!
+  lastName: String!
+  address: String
+  latestVisit: String
+  baker: User! @relation(name: "UserCustomers")
+}
