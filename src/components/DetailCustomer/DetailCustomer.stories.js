@@ -25,11 +25,11 @@ const purchases = [
 
 storiesOf('DetailCustomer', module)
   .add('default customer with loading', () => (
-    <DetailCustomer customer={customer} loading purchases={[]} />
+    <DetailCustomer customer={customer} loading purchases={[]} totalValue={'0'} />
   ))
   .add('default customer with no purchases', () => (
-    <DetailCustomer customer={customer} loading={false} purchases={[]} />
+    <DetailCustomer customer={customer} loading={false} purchases={[]} totalValue={'0'} />
   ))
   .add('default customer with purchases', () => (
-    <DetailCustomer customer={customer} loading={false} purchases={purchases} />
+    <DetailCustomer customer={customer} loading={false} purchases={purchases} totalValue={'0'} />
   ));

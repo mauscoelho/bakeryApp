@@ -41,11 +41,11 @@ const purchasesShort = [
 
 storiesOf('CustomerInfo', module)
   .add('with short purchases', () => (
-    <CustomerInfo purchases={purchasesShort} totalValue={0} />
+    <CustomerInfo purchases={purchasesShort} totalValue={'0'} />
   ))
   .add('with long purchases', () => (
-    <CustomerInfo purchases={purchasesLong} totalValue={0} />
+    <CustomerInfo purchases={purchasesLong} totalValue={'0'} />
   ))
   .add('with purchases and total value', () => (
-    <CustomerInfo purchases={purchasesShort} totalValue={59} />
+    <CustomerInfo purchases={purchasesShort} totalValue={'59'} />
   ));

@@ -26,8 +26,7 @@ CustomerInfo.propTypes = {
     description: PropTypes.string,
     value: PropTypes.float,
   })),
-
-  totalValue: PropTypes.number,
+  totalValue: PropTypes.string,
 };
 
 export default CustomerInfo;
