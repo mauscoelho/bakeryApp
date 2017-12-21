@@ -3,7 +3,7 @@ import CustomerList from './containers/CustomerList/index';
 import AddCustomer from './containers/AddCustomer/index';
 import EditCustomer from './containers/EditCustomer/index';
 import DetailCustomer from './containers/DetailCustomer/index';
-import Purchase from './components/Purchase/index';
+import Purchase from './containers/Purchase/index';
 
 const Routes = StackNavigator({
   Home: {

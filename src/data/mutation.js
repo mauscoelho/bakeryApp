@@ -47,3 +47,12 @@ export const UPDATE_CUSTOMER_MUTATION = gql`
     }
   }
 `;
+
+export const CREATE_PURCHASE_MUTATION = gql`
+  mutation CreatePurchaseMutation($customerId: ID!, $description: String!) {
+    createPurchase(customerId: $customerId, description: $description) {
+      id
+      description
+    }
+  }
+`;
