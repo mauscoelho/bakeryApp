@@ -1,6 +1,22 @@
 import React from 'react';
-import Apollo from './Apollo';
+import { StatusBar, View, StyleSheet } from 'react-native';
+import { ApolloProvider } from 'react-apollo';
+import client from './data/apollo';
+import Routes from './Routes';
 
-const App = () => <Apollo />;
+const styles = StyleSheet.create({
+  app: {
+    flex: 1,
+  },
+});
+
+const App = () => (
+  <ApolloProvider client={client}>
+    <View style={styles.app}>
+      <StatusBar barStyle="dark-content" />
+      <Routes />
+    </View>
+  </ApolloProvider>
+);
 
 export default App;
