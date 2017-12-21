@@ -11,13 +11,27 @@ const styles = StyleSheet.create({
   },
 });
 
-const Purchase = ({ onPressFab, description, onChangeDescription }) => (
+const Purchase = ({
+  onPressFab,
+  description,
+  value,
+  onChangeDescription,
+  onChangeValue,
+}) => (
   <Container>
     <Content>
       <Form>
         <Item floatingLabel>
           <Label>Description</Label>
           <Input value={description} onChangeText={onChangeDescription} />
+        </Item>
+        <Item floatingLabel>
+          <Label>Value</Label>
+          <Input
+            value={value}
+            onChangeText={onChangeValue}
+            keyboardType={'numeric'}
+          />
         </Item>
       </Form>
     </Content>
@@ -29,7 +43,9 @@ const Purchase = ({ onPressFab, description, onChangeDescription }) => (
 
 Purchase.propTypes = {
   description: PropTypes.string,
+  value: PropTypes.string,
   onChangeDescription: PropTypes.func,
+  onChangeValue: PropTypes.func,
   onPressFab: PropTypes.func,
 };
 
