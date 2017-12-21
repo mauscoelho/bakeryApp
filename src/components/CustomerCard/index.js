@@ -14,11 +14,14 @@ const styles = StyleSheet.create({
   },
   center: {
     justifyContent: 'center',
-    paddingLeft: 10,
-    paddingRight: 10,
+    paddingLeft: 8,
+    paddingRight: 8,
   },
   body: {
     flex: 1,
+  },
+  latestVisit: {
+    fontSize: 12,
   },
 });
 
@@ -37,7 +40,7 @@ const CustomerCard = ({
         <Text note>{address}</Text>
       </View>
       <View style={styles.center}>
-        <Text>{latestVisit}</Text>
+        <Text style={styles.latestVisit}>{latestVisit}</Text>
       </View>
     </View>
   </View>
