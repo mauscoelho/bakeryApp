@@ -10,7 +10,15 @@ type Customer @model {
   name: String!
   lastName: String!
   address: String
-  email: String
-  latestVisit: String
+  email: String  
   baker: User @relation(name: "UserCustomers")
+  purchases: [Purchase!]! @relation(name: "CustomerPurchases")
+}
+
+type Purchase @model {
+  id: ID! @isUnique
+  description: String!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  customer: Customer! @relation(name: "CustomerPurchases")
 }
