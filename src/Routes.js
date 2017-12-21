@@ -1,6 +1,6 @@
 import { StackNavigator } from 'react-navigation';
 import CustomerList from './containers/CustomerList/index';
-import AddCustomer from './components/AddCustomer/index';
+import AddCustomer from './containers/AddCustomer/index';
 
 const Routes = StackNavigator({
   Home: {
