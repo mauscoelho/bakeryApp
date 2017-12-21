@@ -1,9 +1,11 @@
 import React from 'react';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Container, Content, Fab, Button } from 'native-base';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, ActivityIndicator } from 'react-native';
 import { PropTypes } from 'prop-types';
 import { Colors } from '../../constants';
+import CustomerCard from '../CustomerCard/index';
+import CustomerInfo from '../CustomerInfo/index';
 
 const styles = StyleSheet.create({
   fab: {
@@ -11,9 +13,19 @@ const styles = StyleSheet.create({
   },
 });
 
-const DetailCustomer = ({ customer, onPressEdit, onPressPurchase }) => (
+const DetailCustomer = ({
+  customer,
+  onPressEdit,
+  onPressPurchase,
+  loading,
+  purchases,
+}) => (
   <Container>
-    <Content />
+    <Content>
+      <CustomerCard customer={customer} />
+      {loading && <ActivityIndicator />}
+      {!loading && <CustomerInfo purchases={purchases} totalValue={0} />}
+    </Content>
     <Fab
       style={styles.fab}
       active
@@ -31,6 +43,8 @@ const DetailCustomer = ({ customer, onPressEdit, onPressPurchase }) => (
 
 DetailCustomer.propTypes = {
   customer: PropTypes.shape({}),
+  loading: PropTypes.bool,
+  purchases: PropTypes.arrayOf(PropTypes.shape({})),
   onPressEdit: PropTypes.func,
   onPressPurchase: PropTypes.func,
 };

@@ -14,3 +14,15 @@ export const ALL_CUSTOMERS_QUERY = gql`
     }
   }
 `;
+
+export const LAST_PURCHASES_QUERY = gql`
+  query lastPurchasesQuery($id: ID!) {
+    Customer(id: $id) {
+      purchases(last: 10) {
+        id
+        description
+        value
+      }
+    }
+  }
+`;
