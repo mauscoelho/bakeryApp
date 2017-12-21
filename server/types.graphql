@@ -18,6 +18,7 @@ type Customer @model {
 type Purchase @model {
   id: ID! @isUnique
   description: String!
+  value: Float!
   createdAt: DateTime!
   updatedAt: DateTime!
   customer: Customer! @relation(name: "CustomerPurchases")
