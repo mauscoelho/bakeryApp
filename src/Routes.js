@@ -3,6 +3,7 @@ import CustomerList from './containers/CustomerList/index';
 import AddCustomer from './containers/AddCustomer/index';
 import EditCustomer from './containers/EditCustomer/index';
 import DetailCustomer from './containers/DetailCustomer/index';
+import Purchase from './components/Purchase/index';
 
 const Routes = StackNavigator({
   Home: {
@@ -27,6 +28,12 @@ const Routes = StackNavigator({
     screen: DetailCustomer,
     navigationOptions: {
       title: 'Detail Customer',
+    },
+  },
+  Purchase: {
+    screen: Purchase,
+    navigationOptions: {
+      title: 'Add Purchase',
     },
   },
 });

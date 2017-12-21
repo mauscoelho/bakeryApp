@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const DetailCustomer = ({ customer, onPressEdit }) => (
+const DetailCustomer = ({ customer, onPressEdit, onPressPurchase }) => (
   <Container>
     <Content />
     <Fab
@@ -19,6 +19,7 @@ const DetailCustomer = ({ customer, onPressEdit }) => (
       active
       direction="up"
       position="bottomRight"
+      onPress={onPressPurchase}
     >
       <Icon name="cart" />
       <Button style={{ backgroundColor: Colors.teal }} onPress={onPressEdit}>
@@ -31,6 +32,7 @@ const DetailCustomer = ({ customer, onPressEdit }) => (
 DetailCustomer.propTypes = {
   customer: PropTypes.shape({}),
   onPressEdit: PropTypes.func,
+  onPressPurchase: PropTypes.func,
 };
 
 export default DetailCustomer;
