@@ -14,17 +14,18 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   center: {
-    minWidth: 60,
+    width: 60,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingLeft: 8,
-    paddingRight: 8,
+    paddingLeft: 2,
+    paddingRight: 2,
   },
   body: {
     flex: 1,
   },
   latestVisit: {
     fontSize: 12,
+    textAlign: 'center',
   },
 });
 

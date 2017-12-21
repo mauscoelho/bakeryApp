@@ -1175,9 +1175,9 @@ exports[`Storyshots CustomerCard with long text 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "minWidth": 60,
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingLeft": 2,
+          "paddingRight": 2,
+          "width": 60,
         }
       }
     >
@@ -1249,9 +1249,9 @@ exports[`Storyshots CustomerCard with long text 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "minWidth": 60,
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingLeft": 2,
+          "paddingRight": 2,
+          "width": 60,
         }
       }
     >
@@ -1268,6 +1268,7 @@ exports[`Storyshots CustomerCard with long text 1`] = `
             },
             Object {
               "fontSize": 12,
+              "textAlign": "center",
             },
           ]
         }
@@ -1324,9 +1325,9 @@ exports[`Storyshots CustomerCard with short text 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "minWidth": 60,
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingLeft": 2,
+          "paddingRight": 2,
+          "width": 60,
         }
       }
     >
@@ -1398,9 +1399,9 @@ exports[`Storyshots CustomerCard with short text 1`] = `
         Object {
           "alignItems": "center",
           "justifyContent": "center",
-          "minWidth": 60,
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingLeft": 2,
+          "paddingRight": 2,
+          "width": 60,
         }
       }
     >
@@ -1417,6 +1418,7 @@ exports[`Storyshots CustomerCard with short text 1`] = `
             },
             Object {
               "fontSize": 12,
+              "textAlign": "center",
             },
           ]
         }
