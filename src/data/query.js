@@ -7,6 +7,7 @@ export const ALL_CUSTOMERS_QUERY = gql`
       lastName
       name
       address
+      email
       latestVisit
     }
   }
