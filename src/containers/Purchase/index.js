@@ -1,21 +1,21 @@
-import { graphql } from 'react-apollo';
+import { graphql } from "react-apollo";
 import {
   compose,
   branch,
   renderComponent,
   withHandlers,
   withState,
-  mapProps,
-} from 'recompose';
-import { ActivityIndicator } from 'react-native';
-import { withNavigation } from 'react-navigation';
-import { CREATE_PURCHASE_MUTATION } from '../../data/mutation';
-import { ALL_CUSTOMERS_QUERY } from '../../data/query';
-import Purchase from '../../components/Purchase/index';
+  mapProps
+} from "recompose";
+import { ActivityIndicator } from "react-native";
+import { withNavigation } from "react-navigation";
+import { CREATE_PURCHASE_MUTATION } from "../../data/mutation";
+import { ALL_CUSTOMERS_QUERY, LAST_PURCHASES_QUERY } from "../../data/query";
+import Purchase from "../../components/Purchase/index";
 
 const isLoading = branch(
   ({ loading }) => loading,
-  renderComponent(ActivityIndicator),
+  renderComponent(ActivityIndicator)
 );
 
 const onPressFab = ({
@@ -24,7 +24,7 @@ const onPressFab = ({
   setLoading,
   description,
   value,
-  navigation,
+  navigation
 }) => async () => {
   const { id } = customer;
   setLoading(true);
@@ -32,8 +32,8 @@ const onPressFab = ({
     variables: {
       customerId: id,
       description,
-      value: parseFloat(value),
-    },
+      value: parseFloat(value)
+    }
   });
   navigation.goBack();
 };
@@ -45,24 +45,32 @@ const onChangeValue = ({ setValue }) => value => setValue(value);
 const enhance = compose(
   mapProps(({ navigation: { state: { params: { customer } } }, ...rest }) => ({
     customer,
-    ...rest,
+    ...rest
   })),
-  withState('loading', 'setLoading', false),
-  withState('description', 'setDescription', ''),
-  withState('value', 'setValue', ''),
+  withState("loading", "setLoading", false),
+  withState("description", "setDescription", ""),
+  withState("value", "setValue", ""),
   withNavigation,
   graphql(CREATE_PURCHASE_MUTATION, {
-    name: 'createPurchaseMutation',
-    options: {
-      refetchQueries: [{ query: ALL_CUSTOMERS_QUERY }],
-    },
+    name: "createPurchaseMutation",
+    options: ({ customer: { id } }) => ({
+      refetchQueries: [
+        { query: ALL_CUSTOMERS_QUERY },
+        {
+          query: LAST_PURCHASES_QUERY,
+          variables: {
+            id
+          }
+        }
+      ]
+    })
   }),
   isLoading,
   withHandlers({
     onPressFab,
     onChangeDescription,
-    onChangeValue,
-  }),
+    onChangeValue
+  })
 );
 
 export default enhance(Purchase);

@@ -10,6 +10,26 @@ const customer = {
   latestVisit: '2h',
 };
 
-storiesOf('DetailCustomer', module).add('default customer', () => (
-  <DetailCustomer customer={customer} />
-));
+const purchases = [
+  {
+    id: 'cjbg0sd25bxjq0166byvg8kcl',
+    description: 'Potato',
+    value: 2,
+  },
+  {
+    id: 'cjbg0sqv4bqla01531p4kjyoa',
+    description: 'Potato2',
+    value: 2.4,
+  },
+];
+
+storiesOf('DetailCustomer', module)
+  .add('default customer with loading', () => (
+    <DetailCustomer customer={customer} loading purchases={[]} totalValue={'0'} />
+  ))
+  .add('default customer with no purchases', () => (
+    <DetailCustomer customer={customer} loading={false} purchases={[]} totalValue={'0'} />
+  ))
+  .add('default customer with purchases', () => (
+    <DetailCustomer customer={customer} loading={false} purchases={purchases} totalValue={'0'} />
+  ));

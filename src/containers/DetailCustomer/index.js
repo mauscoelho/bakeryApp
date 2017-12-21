@@ -1,19 +1,56 @@
-import { compose, withHandlers } from 'recompose';
-import DetailCustomer from '../../components/DetailCustomer';
+import { compose, withHandlers, mapProps } from "recompose";
+import { graphql } from "react-apollo";
+import { LAST_PURCHASES_QUERY } from "../../data/query";
+import calcPurchases from "../../services/calcPurchases";
+import DetailCustomer from "../../components/DetailCustomer";
 
-const onPressEdit = ({ navigation }) => () => {
-  const { state: { params: { customer } } } = navigation;
-  navigation.navigate('EditCustomer', { customer });
+const onPressEdit = ({ navigation, customer }) => () => {
+  navigation.navigate("EditCustomer", { customer });
 };
 
-const onPressPurchase = ({ navigation }) => () => {
-  const { state: { params: { customer } } } = navigation;
-  navigation.navigate('Purchase', { customer });
+const onPressPurchase = ({ navigation, customer }) => () => {
+  navigation.navigate("Purchase", { customer });
 };
 
-const enhance = compose(withHandlers({
-  onPressEdit,
-  onPressPurchase,
-}));
+const enhance = compose(
+  mapProps(({ navigation, ...rest }) => ({
+    navigation,
+    customer: navigation.state.params.customer,
+    ...rest
+  })),
+  graphql(LAST_PURCHASES_QUERY, {
+    name: "lastPurchasesQuery",
+    options: ({ customer: { id } }) => ({
+      variables: {
+        id
+      },
+      fetchPolicy: "cache-and-network"
+    })
+  }),
+  mapProps(
+    ({
+      customer: { ...customerProps },
+      lastPurchasesQuery: { loading, Customer },
+      ...rest
+    }) => {
+      const purchases = loading ? [] : Customer.purchases;
+      const email = loading ? "" : Customer.email;
+      return {
+        loading,
+        customer: {
+          ...customerProps,
+          email
+        },
+        purchases: purchases,
+        totalValue: calcPurchases({ purchases }),
+        ...rest
+      };
+    }
+  ),
+  withHandlers({
+    onPressEdit,
+    onPressPurchase
+  })
+);
 
 export default enhance(DetailCustomer);

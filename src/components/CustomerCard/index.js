@@ -1,54 +1,37 @@
-import React from 'react';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { StyleSheet, View, TouchableHighlight } from 'react-native';
-import { PropTypes } from 'prop-types';
-import { Text } from 'native-base';
-import { Colors } from '../../constants';
+import React from "react";
+import Icon from "react-native-vector-icons/MaterialCommunityIcons";
+import { StyleSheet, View, TouchableHighlight } from "react-native";
+import { PropTypes } from "prop-types";
+import { Text } from "native-base";
+import { Colors } from "../../constants";
+import baseStyle from "../../styles";
 
 const styles = StyleSheet.create({
-  card: {
-    paddingTop: 4,
-    paddingBottom: 4,
-  },
-  container: {
-    flexDirection: 'row',
-  },
-  center: {
-    width: 60,
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingLeft: 2,
-    paddingRight: 2,
-  },
-  body: {
-    flex: 1,
-  },
   latestVisit: {
     fontSize: 12,
-    textAlign: 'center',
-  },
+    textAlign: "center"
+  }
 });
 
 const CustomerCard = ({
-  customer: {
-    name, lastName, address, latestVisit,
-  },
-  onPressCard,
+  customer: { name, lastName, address, latestVisit, email },
+  onPressCard
 }) => (
   <TouchableHighlight
-    style={styles.card}
+    style={baseStyle.card}
     onPress={onPressCard}
     underlayColor={Colors.ripple}
   >
-    <View style={styles.container}>
-      <View style={styles.center}>
-        <Icon name={'account'} size={27} />
+    <View style={baseStyle.container}>
+      <View style={baseStyle.center}>
+        <Icon name={"account"} size={27} />
       </View>
-      <View style={styles.body}>
+      <View style={baseStyle.body}>
         <Text>{`${name} ${lastName}`}</Text>
         <Text note>{address}</Text>
+        {email !== '' && <Text note>{email}</Text>}
       </View>
-      <View style={styles.center}>
+      <View style={baseStyle.center}>
         <Text style={styles.latestVisit}>{latestVisit}</Text>
       </View>
     </View>
@@ -61,8 +44,9 @@ CustomerCard.propTypes = {
     lastName: PropTypes.string.isRequired,
     address: PropTypes.string.isRequired,
     latestVisit: PropTypes.string.isRequired,
+    email: PropTypes.string
   }),
-  onPressCard: PropTypes.func,
+  onPressCard: PropTypes.func
 };
 
 export default CustomerCard;

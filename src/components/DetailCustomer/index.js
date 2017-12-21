@@ -1,19 +1,34 @@
-import React from 'react';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { Container, Content, Fab, Button } from 'native-base';
-import { StyleSheet } from 'react-native';
-import { PropTypes } from 'prop-types';
-import { Colors } from '../../constants';
+import React from "react";
+import Icon from "react-native-vector-icons/MaterialCommunityIcons";
+import { Container, Content, Fab, Button } from "native-base";
+import { StyleSheet, ActivityIndicator } from "react-native";
+import { PropTypes } from "prop-types";
+import { Colors } from "../../constants";
+import CustomerCard from "../CustomerCard/index";
+import CustomerInfo from "../CustomerInfo/index";
 
 const styles = StyleSheet.create({
   fab: {
-    backgroundColor: Colors.indigo,
-  },
+    backgroundColor: Colors.indigo
+  }
 });
 
-const DetailCustomer = ({ customer, onPressEdit, onPressPurchase }) => (
+const DetailCustomer = ({
+  customer,
+  onPressEdit,
+  onPressPurchase,
+  loading,
+  purchases,
+  totalValue
+}) => (
   <Container>
-    <Content />
+    <Content>
+      <CustomerCard customer={customer} />
+      {loading && <ActivityIndicator />}
+      {!loading && (
+        <CustomerInfo purchases={purchases} totalValue={totalValue} />
+      )}
+    </Content>
     <Fab
       style={styles.fab}
       active
@@ -31,8 +46,11 @@ const DetailCustomer = ({ customer, onPressEdit, onPressPurchase }) => (
 
 DetailCustomer.propTypes = {
   customer: PropTypes.shape({}),
+  loading: PropTypes.bool,
+  purchases: PropTypes.arrayOf(PropTypes.shape({})),
+  totalValue: PropTypes.string,
   onPressEdit: PropTypes.func,
-  onPressPurchase: PropTypes.func,
+  onPressPurchase: PropTypes.func
 };
 
 export default DetailCustomer;
