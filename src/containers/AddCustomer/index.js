@@ -10,7 +10,7 @@ import { ActivityIndicator } from 'react-native';
 import { withNavigation } from 'react-navigation';
 import { CREATE_CUSTOMER_MUTATION } from '../../data/mutation';
 import { ALL_CUSTOMERS_QUERY } from '../../data/query';
-import AddCustomer from '../../components/AddCustomer';
+import AddEditCustomer from '../../components/AddEditCustomer';
 
 const isLoading = branch(
   ({ loading }) => loading,
@@ -66,4 +66,4 @@ const enhance = compose(
   }),
 );
 
-export default enhance(AddCustomer);
+export default enhance(AddEditCustomer);

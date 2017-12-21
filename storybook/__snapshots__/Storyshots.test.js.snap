@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots AddCustomer with empyt form 1`] = `
+exports[`Storyshots AddEditCustomer with empyt form 1`] = `
 <View
   style={
     Object {
@@ -552,7 +552,7 @@ exports[`Storyshots AddCustomer with empyt form 1`] = `
 </View>
 `;
 
-exports[`Storyshots AddCustomer with full values 1`] = `
+exports[`Storyshots AddEditCustomer with full values 1`] = `
 <View
   style={
     Object {
@@ -1151,6 +1151,7 @@ exports[`Storyshots CustomerCard with long text 1`] = `
     <View
       style={
         Object {
+          "alignItems": "center",
           "justifyContent": "center",
           "minWidth": 60,
           "paddingLeft": 8,
@@ -1224,6 +1225,7 @@ exports[`Storyshots CustomerCard with long text 1`] = `
     <View
       style={
         Object {
+          "alignItems": "center",
           "justifyContent": "center",
           "minWidth": 60,
           "paddingLeft": 8,
@@ -1276,6 +1278,7 @@ exports[`Storyshots CustomerCard with short text 1`] = `
     <View
       style={
         Object {
+          "alignItems": "center",
           "justifyContent": "center",
           "minWidth": 60,
           "paddingLeft": 8,
@@ -1349,6 +1352,7 @@ exports[`Storyshots CustomerCard with short text 1`] = `
     <View
       style={
         Object {
+          "alignItems": "center",
           "justifyContent": "center",
           "minWidth": 60,
           "paddingLeft": 8,

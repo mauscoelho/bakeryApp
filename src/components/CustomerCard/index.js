@@ -14,6 +14,7 @@ const styles = StyleSheet.create({
   },
   center: {
     minWidth: 60,
+    alignItems: 'center',
     justifyContent: 'center',
     paddingLeft: 8,
     paddingRight: 8,
