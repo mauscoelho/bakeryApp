@@ -1134,12 +1134,34 @@ exports[`Storyshots AddEditCustomer with full values 1`] = `
 
 exports[`Storyshots CustomerCard with long text 1`] = `
 <View
+  accessibilityComponentType={undefined}
+  accessibilityLabel={undefined}
+  accessibilityTraits={undefined}
+  accessible={true}
+  hasTVPreferredFocus={undefined}
+  hitSlop={undefined}
+  isTVSelectable={true}
+  nativeID={undefined}
+  onLayout={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
   style={
-    Object {
-      "paddingBottom": 4,
-      "paddingTop": 4,
-    }
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+      },
+      Object {
+        "paddingBottom": 4,
+        "paddingTop": 4,
+      },
+    ]
   }
+  testID={undefined}
+  tvParallaxProperties={undefined}
 >
   <View
     style={
@@ -1261,12 +1283,34 @@ exports[`Storyshots CustomerCard with long text 1`] = `
 
 exports[`Storyshots CustomerCard with short text 1`] = `
 <View
+  accessibilityComponentType={undefined}
+  accessibilityLabel={undefined}
+  accessibilityTraits={undefined}
+  accessible={true}
+  hasTVPreferredFocus={undefined}
+  hitSlop={undefined}
+  isTVSelectable={true}
+  nativeID={undefined}
+  onLayout={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
   style={
-    Object {
-      "paddingBottom": 4,
-      "paddingTop": 4,
-    }
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+      },
+      Object {
+        "paddingBottom": 4,
+        "paddingTop": 4,
+      },
+    ]
   }
+  testID={undefined}
+  tvParallaxProperties={undefined}
 >
   <View
     style={
@@ -1380,6 +1424,136 @@ exports[`Storyshots CustomerCard with short text 1`] = `
         virtual={undefined}
       >
         2h
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots DetailCustomer default customer 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "height": 1334,
+    }
+  }
+  virtual={undefined}
+>
+  <RCTScrollView
+    automaticallyAdjustContentInsets={false}
+    contentInset={
+      Object {
+        "bottom": 0,
+      }
+    }
+    enableAutoAutomaticScroll={true}
+    enableResetScrollToCoords={true}
+    extraHeight={75}
+    extraScrollHeight={0}
+    keyboardDismissMode="interactive"
+    keyboardOpeningTime={250}
+    keyboardShouldPersistTaps="handled"
+    onScroll={[Function]}
+    resetScrollToCoords={
+      Object {
+        "x": 0,
+        "y": 0,
+      }
+    }
+    scrollEventThrottle={0}
+    showsVerticalScrollIndicator={true}
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "flex": 1,
+      }
+    }
+    virtual={undefined}
+  >
+    <View />
+  </RCTScrollView>
+  <View
+    collapsable={undefined}
+    style={
+      Object {
+        "alignItems": "center",
+        "bottom": 20,
+        "flexDirection": "column",
+        "height": 56,
+        "left": undefined,
+        "position": "absolute",
+        "right": 20,
+        "top": undefined,
+        "width": 56,
+      }
+    }
+  >
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      collapsable={undefined}
+      hasTVPreferredFocus={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#009688",
+          "borderRadius": 28,
+          "bottom": 0,
+          "elevation": 4,
+          "height": 56,
+          "justifyContent": "center",
+          "opacity": 1,
+          "position": "absolute",
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 0.4,
+          "shadowRadius": 2,
+          "width": 56,
+        }
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={false}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": undefined,
+              "fontSize": 12,
+            },
+            Object {
+              "color": "#fff",
+              "fontSize": 24,
+              "lineHeight": 27,
+            },
+            Object {
+              "fontFamily": "Material Design Icons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+          ]
+        }
+      >
+        
       </Text>
     </View>
   </View>
