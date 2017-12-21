@@ -1527,10 +1527,14 @@ exports[`Storyshots CustomerInfo with long purchases 1`] = `
     </View>
     <View
       style={
-        Object {
-          "flex": 1,
-          "justifyContent": "center",
-        }
+        Array [
+          Object {
+            "flex": 1,
+          },
+          Object {
+            "justifyContent": "center",
+          },
+        ]
       }
     >
       <Text
@@ -1627,10 +1631,14 @@ exports[`Storyshots CustomerInfo with long purchases 1`] = `
     </View>
     <View
       style={
-        Object {
-          "flex": 1,
-          "justifyContent": "center",
-        }
+        Array [
+          Object {
+            "flex": 1,
+          },
+          Object {
+            "justifyContent": "center",
+          },
+        ]
       }
     >
       <Text
@@ -1727,10 +1735,14 @@ exports[`Storyshots CustomerInfo with long purchases 1`] = `
     </View>
     <View
       style={
-        Object {
-          "flex": 1,
-          "justifyContent": "center",
-        }
+        Array [
+          Object {
+            "flex": 1,
+          },
+          Object {
+            "justifyContent": "center",
+          },
+        ]
       }
     >
       <Text
@@ -1827,10 +1839,14 @@ exports[`Storyshots CustomerInfo with long purchases 1`] = `
     </View>
     <View
       style={
-        Object {
-          "flex": 1,
-          "justifyContent": "center",
-        }
+        Array [
+          Object {
+            "flex": 1,
+          },
+          Object {
+            "justifyContent": "center",
+          },
+        ]
       }
     >
       <Text
@@ -1983,10 +1999,14 @@ exports[`Storyshots CustomerInfo with purchases and total value 1`] = `
     </View>
     <View
       style={
-        Object {
-          "flex": 1,
-          "justifyContent": "center",
-        }
+        Array [
+          Object {
+            "flex": 1,
+          },
+          Object {
+            "justifyContent": "center",
+          },
+        ]
       }
     >
       <Text
@@ -2083,10 +2103,14 @@ exports[`Storyshots CustomerInfo with purchases and total value 1`] = `
     </View>
     <View
       style={
-        Object {
-          "flex": 1,
-          "justifyContent": "center",
-        }
+        Array [
+          Object {
+            "flex": 1,
+          },
+          Object {
+            "justifyContent": "center",
+          },
+        ]
       }
     >
       <Text
@@ -2239,10 +2263,14 @@ exports[`Storyshots CustomerInfo with short purchases 1`] = `
     </View>
     <View
       style={
-        Object {
-          "flex": 1,
-          "justifyContent": "center",
-        }
+        Array [
+          Object {
+            "flex": 1,
+          },
+          Object {
+            "justifyContent": "center",
+          },
+        ]
       }
     >
       <Text
@@ -2339,10 +2367,14 @@ exports[`Storyshots CustomerInfo with short purchases 1`] = `
     </View>
     <View
       style={
-        Object {
-          "flex": 1,
-          "justifyContent": "center",
-        }
+        Array [
+          Object {
+            "flex": 1,
+          },
+          Object {
+            "justifyContent": "center",
+          },
+        ]
       }
     >
       <Text
@@ -3448,10 +3480,14 @@ exports[`Storyshots DetailCustomer default customer with purchases 1`] = `
           </View>
           <View
             style={
-              Object {
-                "flex": 1,
-                "justifyContent": "center",
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                },
+                Object {
+                  "justifyContent": "center",
+                },
+              ]
             }
           >
             <Text
@@ -3548,10 +3584,14 @@ exports[`Storyshots DetailCustomer default customer with purchases 1`] = `
           </View>
           <View
             style={
-              Object {
-                "flex": 1,
-                "justifyContent": "center",
-              }
+              Array [
+                Object {
+                  "flex": 1,
+                },
+                Object {
+                  "justifyContent": "center",
+                },
+              ]
             }
           >
             <Text
@@ -3767,6 +3807,113 @@ exports[`Storyshots DetailCustomer default customer with purchases 1`] = `
         
       </Text>
     </View>
+  </View>
+</View>
+`;
+
+exports[`Storyshots PurchaseItem with purchase 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingLeft": 2,
+        "paddingRight": 2,
+        "width": 60,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={false}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": undefined,
+            "fontSize": 27,
+          },
+          undefined,
+          Object {
+            "fontFamily": "Material Design Icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#000",
+          "fontFamily": "System",
+          "fontSize": 16,
+        }
+      }
+      uppercase={false}
+      virtual={undefined}
+    >
+      Potato
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingLeft": 2,
+        "paddingRight": 2,
+        "width": 60,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#000",
+            "fontFamily": "System",
+            "fontSize": 16,
+          },
+          Object {
+            "fontSize": 12,
+            "textAlign": "center",
+          },
+        ]
+      }
+      uppercase={false}
+      virtual={undefined}
+    >
+      2
+    </Text>
   </View>
 </View>
 `;
