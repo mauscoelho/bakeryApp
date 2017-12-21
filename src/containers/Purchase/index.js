@@ -23,6 +23,7 @@ const onPressFab = ({
   createPurchaseMutation,
   setLoading,
   description,
+  value,
   navigation,
 }) => async () => {
   const { id } = customer;
@@ -31,12 +32,15 @@ const onPressFab = ({
     variables: {
       customerId: id,
       description,
+      value: parseFloat(value),
     },
   });
   navigation.goBack();
 };
 
-const onChangeDescription = ({ setDescription }) => value => setDescription(value);
+const onChangeDescription = ({ setDescription }) => value =>
+  setDescription(value);
+const onChangeValue = ({ setValue }) => value => setValue(value);
 
 const enhance = compose(
   mapProps(({ navigation: { state: { params: { customer } } }, ...rest }) => ({
@@ -45,6 +49,7 @@ const enhance = compose(
   })),
   withState('loading', 'setLoading', false),
   withState('description', 'setDescription', ''),
+  withState('value', 'setValue', ''),
   withNavigation,
   graphql(CREATE_PURCHASE_MUTATION, {
     name: 'createPurchaseMutation',
@@ -56,6 +61,7 @@ const enhance = compose(
   withHandlers({
     onPressFab,
     onChangeDescription,
+    onChangeValue,
   }),
 );
 
