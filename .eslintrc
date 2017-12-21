@@ -1,6 +1,6 @@
 {
   "parser": "babel-eslint",
-  "plugins": ["react", "react-native"],
+  "plugins": ["react", "react-native", "jest"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true,
