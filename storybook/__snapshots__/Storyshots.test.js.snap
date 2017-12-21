@@ -1,109 +1,237 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots App with default 1`] = `
+exports[`Storyshots CustomerCard with long text 1`] = `
 <View
   style={
     Object {
-      "alignItems": "center",
-      "backgroundColor": "#F5FCFF",
-      "flex": 1,
-      "justifyContent": "center",
+      "paddingBottom": 4,
+      "paddingTop": 4,
     }
   }
 >
   <View
     style={
       Object {
-        "alignItems": "center",
-        "backgroundColor": "#F5FCFF",
-        "flex": 1,
-        "justifyContent": "center",
+        "flexDirection": "row",
       }
     }
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    <View
       style={
         Object {
-          "fontSize": 20,
-          "margin": 10,
-          "textAlign": "center",
+          "justifyContent": "center",
+          "paddingLeft": 10,
+          "paddingRight": 10,
         }
       }
     >
-      Welcome to React Native!
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+      <Text
+        accessible={true}
+        allowFontScaling={false}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": undefined,
+              "fontSize": 27,
+            },
+            undefined,
+            Object {
+              "fontFamily": "Material Design Icons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+    <View
       style={
         Object {
-          "color": "#333333",
-          "marginBottom": 5,
-          "textAlign": "center",
+          "flex": 1,
         }
       }
     >
-      To get started, edit App.js
-    </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#000",
+            "fontFamily": "System",
+            "fontSize": 16,
+          }
+        }
+        uppercase={false}
+        virtual={undefined}
+      >
+        Mauricio Coelho
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        note={true}
+        style={
+          Object {
+            "color": "#a7a7a7",
+            "fontFamily": "System",
+            "fontSize": 14,
+          }
+        }
+        uppercase={false}
+        virtual={undefined}
+      >
+        7889 West Tunnel Apt. 676 South Sherman, AK 16549
+      </Text>
+    </View>
+    <View
       style={
         Object {
-          "color": "#333333",
-          "marginBottom": 5,
-          "textAlign": "center",
+          "justifyContent": "center",
+          "paddingLeft": 10,
+          "paddingRight": 10,
         }
       }
     >
-      Press Cmd+R to reload,
-
-    </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#000",
+            "fontFamily": "System",
+            "fontSize": 16,
+          }
+        }
+        uppercase={false}
+        virtual={undefined}
+      >
+        1h
+      </Text>
+    </View>
   </View>
 </View>
 `;
 
-exports[`Storyshots Welcome to Storybook 1`] = `
+exports[`Storyshots CustomerCard with short text 1`] = `
 <View
   style={
     Object {
-      "flex": 1,
-      "justifyContent": "center",
-      "padding": 24,
+      "paddingBottom": 4,
+      "paddingTop": 4,
     }
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+  <View
     style={
       Object {
-        "fontSize": 18,
-        "marginBottom": 18,
+        "flexDirection": "row",
       }
     }
   >
-    Welcome to React Native Storybook
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "fontSize": 12,
-        "lineHeight": 18,
-        "marginBottom": 10,
+    <View
+      style={
+        Object {
+          "justifyContent": "center",
+          "paddingLeft": 10,
+          "paddingRight": 10,
+        }
       }
-    }
-  >
-    This is a UI Component development environment for your React Native app. Here you can display and interact with your UI components as stories. A story is a single state of one or more UI components. You can have as many stories as you want. In other words a story is like a visual test case.
-  </Text>
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={false}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": undefined,
+              "fontSize": 27,
+            },
+            undefined,
+            Object {
+              "fontFamily": "Material Design Icons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#000",
+            "fontFamily": "System",
+            "fontSize": 16,
+          }
+        }
+        uppercase={false}
+        virtual={undefined}
+      >
+        João João
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        note={true}
+        style={
+          Object {
+            "color": "#a7a7a7",
+            "fontFamily": "System",
+            "fontSize": 14,
+          }
+        }
+        uppercase={false}
+        virtual={undefined}
+      >
+        South Sherman
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "justifyContent": "center",
+          "paddingLeft": 10,
+          "paddingRight": 10,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#000",
+            "fontFamily": "System",
+            "fontSize": 16,
+          }
+        }
+        uppercase={false}
+        virtual={undefined}
+      >
+        2h
+      </Text>
+    </View>
+  </View>
 </View>
 `;
