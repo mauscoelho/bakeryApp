@@ -4,4 +4,5 @@ export const GQL_URI =
 export const Colors = {
   green: '#43A047',
   white: '#ffffff',
+  indigo: '#3F51B5',
 };
