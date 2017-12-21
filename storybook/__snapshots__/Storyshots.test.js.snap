@@ -1509,7 +1509,82 @@ exports[`Storyshots DetailCustomer default customer 1`] = `
       style={
         Object {
           "alignItems": "center",
+          "alignSelf": "flex-start",
           "backgroundColor": "#009688",
+          "borderBottomWidth": null,
+          "borderColor": "#007aff",
+          "borderLeftWidth": null,
+          "borderRadius": 20,
+          "borderRightWidth": null,
+          "borderTopWidth": null,
+          "bottom": 65,
+          "elevation": 2,
+          "flexDirection": "row",
+          "height": 40,
+          "justifyContent": "center",
+          "left": 8,
+          "marginBottom": 10,
+          "opacity": 1,
+          "paddingBottom": null,
+          "paddingLeft": null,
+          "paddingRight": null,
+          "paddingTop": null,
+          "position": "absolute",
+          "right": 0,
+          "transform": Array [
+            Object {
+              "scale": 0,
+            },
+          ],
+          "width": 40,
+        }
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={false}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#ffffff",
+              "fontSize": 12,
+            },
+            undefined,
+            Object {
+              "fontFamily": "Material Design Icons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      collapsable={undefined}
+      hasTVPreferredFocus={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#3F51B5",
           "borderRadius": 28,
           "bottom": 0,
           "elevation": 4,
@@ -1553,7 +1628,7 @@ exports[`Storyshots DetailCustomer default customer 1`] = `
           ]
         }
       >
-        
+        
       </Text>
     </View>
   </View>
