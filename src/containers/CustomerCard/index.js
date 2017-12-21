@@ -8,10 +8,13 @@ const onPressCard = ({ navigation, customer }) => () => {
 };
 
 const enhance = compose(
-  mapProps(({ customer: { latestVisit, ...rest } }) => ({
+  mapProps(({ customer: { purchases, ...rest } }) => ({
     customer: {
       ...rest,
-      latestVisit: latestVisit ? moment(latestVisit).fromNow(true) : '',
+      latestVisit:
+          purchases.length > 0
+            ? moment(purchases[0].updatedAt).fromNow(true)
+            : '',
     },
   })),
   withNavigation,

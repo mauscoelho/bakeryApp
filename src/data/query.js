@@ -8,7 +8,9 @@ export const ALL_CUSTOMERS_QUERY = gql`
       name
       address
       email
-      latestVisit
+      purchases(last: 1) {
+        updatedAt
+      }
     }
   }
 `;
