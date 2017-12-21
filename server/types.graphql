@@ -10,6 +10,7 @@ type Customer @model {
   name: String!
   lastName: String!
   address: String
-  latestVisit: DateTime
+  email: String
+  latestVisit: String
   baker: User @relation(name: "UserCustomers")
 }

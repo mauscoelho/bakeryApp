@@ -5,10 +5,11 @@ import {
   renderComponent,
   withHandlers,
   withState,
+  mapProps,
 } from 'recompose';
 import { ActivityIndicator } from 'react-native';
 import { withNavigation } from 'react-navigation';
-import { CREATE_CUSTOMER_MUTATION } from '../../data/mutation';
+import { UPDATE_CUSTOMER_MUTATION } from '../../data/mutation';
 import { ALL_CUSTOMERS_QUERY } from '../../data/query';
 import AddEditCustomer from '../../components/AddEditCustomer';
 
@@ -18,7 +19,8 @@ const isLoading = branch(
 );
 
 const onPressFab = ({
-  createCustomerMutation,
+  customer,
+  updateCustomerMutation,
   setLoading,
   name,
   lastName,
@@ -26,9 +28,11 @@ const onPressFab = ({
   address,
   navigation,
 }) => async () => {
+  const { id } = customer;
   setLoading(true);
-  await createCustomerMutation({
+  await updateCustomerMutation({
     variables: {
+      id,
       name,
       lastName,
       email,
@@ -44,14 +48,18 @@ const onChangeEmail = ({ setEmail }) => value => setEmail(value);
 const onChangeAddress = ({ setAddress }) => value => setAddress(value);
 
 const enhance = compose(
+  mapProps(({ navigation: { state: { params: { customer } } }, ...rest }) => ({
+    customer,
+    ...rest,
+  })),
   withState('loading', 'setLoading', false),
-  withState('name', 'setName', ''),
-  withState('lastName', 'setLastName', ''),
-  withState('email', 'setEmail', ''),
-  withState('address', 'setAddress', ''),
+  withState('name', 'setName', ({ customer }) => customer.name),
+  withState('lastName', 'setLastName', ({ customer }) => customer.lastName),
+  withState('email', 'setEmail', ({ customer }) => customer.email),
+  withState('address', 'setAddress', ({ customer }) => customer.address),
   withNavigation,
-  graphql(CREATE_CUSTOMER_MUTATION, {
-    name: 'createCustomerMutation',
+  graphql(UPDATE_CUSTOMER_MUTATION, {
+    name: 'updateCustomerMutation',
     options: {
       refetchQueries: [{ query: ALL_CUSTOMERS_QUERY }],
     },

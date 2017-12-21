@@ -1,8 +1,9 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { StyleSheet, View, TouchableHighlight } from 'react-native';
 import { PropTypes } from 'prop-types';
 import { Text } from 'native-base';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { Colors } from '../../constants';
 
 const styles = StyleSheet.create({
   card: {
@@ -14,6 +15,7 @@ const styles = StyleSheet.create({
   },
   center: {
     minWidth: 60,
+    alignItems: 'center',
     justifyContent: 'center',
     paddingLeft: 8,
     paddingRight: 8,
@@ -30,8 +32,13 @@ const CustomerCard = ({
   customer: {
     name, lastName, address, latestVisit,
   },
+  onPressCard,
 }) => (
-  <View style={styles.card}>
+  <TouchableHighlight
+    style={styles.card}
+    onPress={onPressCard}
+    underlayColor={Colors.ripple}
+  >
     <View style={styles.container}>
       <View style={styles.center}>
         <Icon name={'account'} size={27} />
@@ -44,7 +51,7 @@ const CustomerCard = ({
         <Text style={styles.latestVisit}>{latestVisit}</Text>
       </View>
     </View>
-  </View>
+  </TouchableHighlight>
 );
 
 CustomerCard.propTypes = {
@@ -54,6 +61,7 @@ CustomerCard.propTypes = {
     address: PropTypes.string.isRequired,
     latestVisit: PropTypes.string.isRequired,
   }),
+  onPressCard: PropTypes.func,
 };
 
 export default CustomerCard;

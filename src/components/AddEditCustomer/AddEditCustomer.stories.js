@@ -3,7 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react-native';
 import AddCustomer from './index';
 
-storiesOf('AddCustomer', module)
+storiesOf('AddEditCustomer', module)
   .add('with empyt form', () => <AddCustomer />)
   .add('with full values', () => (
     <AddCustomer
