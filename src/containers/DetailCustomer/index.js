@@ -27,15 +27,26 @@ const enhance = compose(
       fetchPolicy: "cache-and-network"
     })
   }),
-  mapProps(({ lastPurchasesQuery: { loading, Customer }, ...rest }) => {
-    const purchases = loading ? [] : Customer.purchases;
-    return {
-      loading,
-      purchases: purchases,
-      totalValue: calcPurchases({ purchases }),
+  mapProps(
+    ({
+      customer: { ...customerProps },
+      lastPurchasesQuery: { loading, Customer },
       ...rest
-    };
-  }),
+    }) => {
+      const purchases = loading ? [] : Customer.purchases;
+      const email = loading ? "" : Customer.email;
+      return {
+        loading,
+        customer: {
+          ...customerProps,
+          email
+        },
+        purchases: purchases,
+        totalValue: calcPurchases({ purchases }),
+        ...rest
+      };
+    }
+  ),
   withHandlers({
     onPressEdit,
     onPressPurchase

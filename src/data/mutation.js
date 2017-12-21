@@ -1,4 +1,4 @@
-import gql from 'graphql-tag';
+import gql from "graphql-tag";
 
 export const CREATE_CUSTOMER_MUTATION = gql`
   mutation CreateCustomerMutation(
@@ -17,7 +17,6 @@ export const CREATE_CUSTOMER_MUTATION = gql`
       name
       lastName
       email
-      latestVisit
       address
     }
   }
@@ -42,7 +41,6 @@ export const UPDATE_CUSTOMER_MUTATION = gql`
       name
       lastName
       email
-      latestVisit
       address
     }
   }
