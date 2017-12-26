@@ -1,12 +1,11 @@
-import { ApolloClient } from 'apollo-client';
-import { ApolloLink } from 'apollo-link';
-import links from './links';
-import cache from './cache';
+import { ApolloClient } from "apollo-client";
+import { HttpLink } from "apollo-link-http";
+import { InMemoryCache } from "apollo-cache-inmemory";
+import { GQL_URI } from "../../constants";
 
-const link = ApolloLink.from(links);
 const client = new ApolloClient({
-  link,
-  cache,
+  link: new HttpLink({ uri: GQL_URI }),
+  cache: new InMemoryCache()
 });
 
 export default client;
