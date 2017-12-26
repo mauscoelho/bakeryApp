@@ -6,7 +6,10 @@ import { ALL_CUSTOMERS_QUERY } from '../../data/query';
 import CustomerList from '../../components/CustomerList';
 
 const isLoading = branch(
-  ({ allCustomersQuery }) => allCustomersQuery.loading,
+  ({ allCustomersQuery }) => {
+    console.log(allCustomersQuery);
+    return allCustomersQuery.loading
+  },
   renderComponent(ActivityIndicator),
 );
 
