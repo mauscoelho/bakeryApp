@@ -1243,6 +1243,21 @@ exports[`Storyshots CustomerCard with long text 1`] = `
       >
         7889 West Tunnel Apt. 676 South Sherman, AK 16549
       </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        note={true}
+        style={
+          Object {
+            "color": "#a7a7a7",
+            "fontFamily": "System",
+            "fontSize": 14,
+          }
+        }
+        uppercase={false}
+        virtual={undefined}
+      />
     </View>
     <View
       style={
@@ -1393,6 +1408,21 @@ exports[`Storyshots CustomerCard with short text 1`] = `
       >
         South Sherman
       </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        note={true}
+        style={
+          Object {
+            "color": "#a7a7a7",
+            "fontFamily": "System",
+            "fontSize": 14,
+          }
+        }
+        uppercase={false}
+        virtual={undefined}
+      />
     </View>
     <View
       style={
@@ -2584,6 +2614,21 @@ exports[`Storyshots DetailCustomer default customer with loading 1`] = `
             >
               South Sherman
             </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              note={true}
+              style={
+                Object {
+                  "color": "#a7a7a7",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                }
+              }
+              uppercase={false}
+              virtual={undefined}
+            />
           </View>
           <View
             style={
@@ -2943,6 +2988,21 @@ exports[`Storyshots DetailCustomer default customer with no purchases 1`] = `
             >
               South Sherman
             </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              note={true}
+              style={
+                Object {
+                  "color": "#a7a7a7",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                }
+              }
+              uppercase={false}
+              virtual={undefined}
+            />
           </View>
           <View
             style={
@@ -3349,6 +3409,21 @@ exports[`Storyshots DetailCustomer default customer with purchases 1`] = `
             >
               South Sherman
             </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              note={true}
+              style={
+                Object {
+                  "color": "#a7a7a7",
+                  "fontFamily": "System",
+                  "fontSize": 14,
+                }
+              }
+              uppercase={false}
+              virtual={undefined}
+            />
           </View>
           <View
             style={
